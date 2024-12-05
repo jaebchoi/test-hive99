@@ -1,0 +1,17 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  targetRevision: main
+  repo: https://github.com/jaebchoi/test-hive99
+  helm:
+    valueFiles:
+      - values.yaml
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
+    automated: {}
+
+global:
+  imagePullPolicy: Always
+  dockerRepo: ghcr.io/
