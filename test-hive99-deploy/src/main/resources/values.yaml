@@ -1,7 +1,7 @@
 spec:
   destination:
     server: https://kubernetes.default.svc
-  targetRevision: main
+  targetRevision: dev
   repo: https://github.com/jaebchoi/test-hive99
   helm:
     valueFiles:
